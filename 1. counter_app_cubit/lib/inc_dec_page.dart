@@ -10,6 +10,9 @@ class IncDecPage extends StatelessWidget {
     final counterCubit = BlocProvider.of<CounterCubit>(context);
 
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Inc & Dec"),
+      ),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
